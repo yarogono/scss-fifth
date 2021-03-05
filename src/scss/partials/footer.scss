@@ -1,0 +1,43 @@
+.footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 500px;
+  padding: 3vh 5vw 1vh;
+  background-color: rgba(33, 32, 32, 0.83);
+  height: 32vh;
+  color: white;
+  font-family: "GTAmerica-Regular", Helvetica, Arial, serif;
+  line-height: 1.5em;
+  &__grid {
+    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 1rem;
+    &-left {
+      display: flex;
+      flex-direction: column;
+      span {
+        font-size: 28px;
+        font-weight: 600;
+        margin-bottom: 110px;
+      }
+      p {
+        margin-bottom: 24px;
+      }
+    }
+    &-right {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      span {
+        font-size: 16px;
+      }
+    }
+    span,
+    p {
+      cursor: pointer;
+    }
+  }
+}

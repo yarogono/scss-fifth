@@ -1,0 +1,28 @@
+.nav {
+  display: flex;
+  position: fixed;
+  justify-content: space-between;
+  width: 100%;
+  padding: 30px 0;
+  margin-bottom: 24px;
+  h3,
+  span {
+    font-size: 50px;
+    font-weight: 600;
+    letter-spacing: -2.7px;
+    cursor: pointer;
+  }
+  &__left {
+    margin-left: 30px;
+    display: flex;
+    h3 {
+      margin-left: 35px;
+    }
+    i {
+      cursor: pointer;
+    }
+  }
+  &__right {
+    margin-right: 96px;
+  }
+}
